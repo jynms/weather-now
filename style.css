@@ -1,0 +1,126 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout */
+body {
+  font-family: sans-serif;
+  background: #e8f4fd;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+/* ── Main card wrapper ── */
+.container {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Button ── */
+button {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+button:hover  { background: #2563eb; }
+button:active { transform: scale(0.97); }
+
+/* ── Status text (loading / error messages) ── */
+#status {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #888;
+  min-height: 20px;
+}
+
+/* ── Weather result card ── */
+.weather-card {
+  margin-top: 1.5rem;
+  background: #f0f7ff;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.weather-icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.description {
+  font-size: 15px;
+  color: #555;
+  margin: 4px 0 1.25rem;
+  text-transform: capitalize;
+}
+
+/* ── Weather details ── */
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.detail {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-size: 11px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.detail-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* ── Location text  ── */
+.location {
+  font-size: 12px;
+  color: #aaa;
+}

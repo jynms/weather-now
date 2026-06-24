@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Now</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌤 What's My Weather?</h1>
+    <p class="subtitle">Uses your location to fetch live weather</p>
+
+    <button id="get-weather-btn" onclick="getWeather()">Get My Weather</button>
+
+    <p id="status"></p>
+
+    <div id="weather-card" class="weather-card" style="display: none;">
+      <div class="weather-icon" id="weather-icon">🌡</div>
+      <div class="temp" id="temp">--</div>
+      <div class="description" id="description">--</div>
+      <div class="details">
+        <div class="detail">
+          <span class="detail-label">Feels like</span>
+          <span class="detail-value" id="feels-like">--</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Humidity</span>
+          <span class="detail-value" id="humidity">--</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Wind</span>
+          <span class="detail-value" id="wind">--</span>
+        </div>
+      </div>
+      <p class="location" id="location">--</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

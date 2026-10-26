@@ -1,4 +1,4 @@
-# 🌤 Weather Now
+# Weather Now
 
 A weather application that uses browser geolocation to retrieve and display real-time weather information based on the user's current location.
 
